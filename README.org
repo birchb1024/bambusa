@@ -37,13 +37,13 @@ Each work item is held in a 'branch' in the project repository. The name of the 
 
 To add a simple comment to a work item it suffices to make an empty Git commit. This can be pushed to remote repositories for storage and consumption by other team members. (use the ~--allow-empty~ commit switch.) A comment can also be made with accompanying changes to the files in the branch. This corresponmds to a comment with attachments in traditional work item systems. 
 
+[[./bambusa-hiw.jpg]]
+
 Clearly this is a very simple workflow, it can be done directly from the Git command-line. However some Git server tools and Git 'fat' clients are unable to create orphan branches or empty commits. 
 
 ** The Workflow Rules
 
 Since the workflow is quite simple the rules described above are spelled out in a specification available in this repository here: [[./standard/bambusa-rfc.org][Bambusa Workflow Specification]]. Any scripts or applications which conform to the standard are valid Bambusa implementations.
-
-#+TODO Write the workflow spec.
 
 Workflow rules can be enforced by centralised Git servers in Git push hooks. Alternatively wrapper scripts which take care of the rules can be provided for local use. A reference cleint-side implementation is provided in this repository here: [[./src][Bambusa client reference]]
 

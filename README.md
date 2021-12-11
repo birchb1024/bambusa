@@ -2,12 +2,12 @@
 # Table of Contents
 
 1.  [Bambusa](#bambusa)
-    1.  [How it Works](#org9a0c799)
-    2.  [The Workflow Rules](#orgd41b81a)
-    3.  [Running the Workflow from the Git Commands](#org6422e14)
-    4.  [Using the Client Scripts](#org9b0d10c)
-2.  [Credits](#org6273e8c)
-3.  [Similar Products](#org3dc1e0d)
+    1.  [How it Works](#orgc0b25a8)
+    2.  [The Workflow Rules](#org9356fd5)
+    3.  [Running the Workflow from the Git Commands](#org024b8a0)
+    4.  [Using the Client Scripts](#orgff53540)
+2.  [Credits](#orgc741abf)
+3.  [Similar Products](#org0339024)
 
 
 
@@ -34,7 +34,7 @@ Bambusa has arisen from my daily use of Git for tracking my own work items. (The
 -   Some work items may require very large files to be associated with each work item. Git 'lfs' can be used to support these use cases.
 
 
-<a id="org9a0c799"></a>
+<a id="orgc0b25a8"></a>
 
 ## How it Works
 
@@ -46,21 +46,21 @@ Each work item is held in a 'branch' in the project repository. The name of the 
 
 To add a simple comment to a work item it suffices to make an empty Git commit. This can be pushed to remote repositories for storage and consumption by other team members. (use the `--allow-empty` commit switch.) A comment can also be made with accompanying changes to the files in the branch. This corresponmds to a comment with attachments in traditional work item systems. 
 
+![img](./bambusa-hiw.jpg)
+
 Clearly this is a very simple workflow, it can be done directly from the Git command-line. However some Git server tools and Git 'fat' clients are unable to create orphan branches or empty commits. 
 
 
-<a id="orgd41b81a"></a>
+<a id="org9356fd5"></a>
 
 ## The Workflow Rules
 
 Since the workflow is quite simple the rules described above are spelled out in a specification available in this repository here: [Bambusa Workflow Specification](./standard/bambusa-rfc.md). Any scripts or applications which conform to the standard are valid Bambusa implementations.
 
-\#+TODO Write the workflow spec.
-
 Workflow rules can be enforced by centralised Git servers in Git push hooks. Alternatively wrapper scripts which take care of the rules can be provided for local use. A reference cleint-side implementation is provided in this repository here: [Bambusa client reference](./src)
 
 
-<a id="org6422e14"></a>
+<a id="org024b8a0"></a>
 
 ## Running the Workflow from the Git Commands
 
@@ -69,21 +69,21 @@ In this section we walk through how to create and operate work items with the Gi
 \#+TODO write raw git section
 
 
-<a id="org9b0d10c"></a>
+<a id="orgff53540"></a>
 
 ## Using the Client Scripts
 
 \#+TODO write the description of the client scripts
 
 
-<a id="org6273e8c"></a>
+<a id="orgc741abf"></a>
 
 # Credits
 
 -   [Illustration - Leaf and inflorescence details (line drawing) Copyright Darwin Herbarium by Monika Osterkamp Madsen](https://keys.lucidcentral.org/keys/v3/AusGrass/key/AusGrass/Media/Html/BAMBUSA/BAMARN.HTML)
 
 
-<a id="org3dc1e0d"></a>
+<a id="org0339024"></a>
 
 # Similar Products
 

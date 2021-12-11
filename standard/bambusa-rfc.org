@@ -1,0 +1,2 @@
+#+TODO Write the workflow spec.
+[[./bambusa-lifecycle.jpg]]
